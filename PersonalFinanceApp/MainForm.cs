@@ -8,18 +8,17 @@ namespace PersonalFinanceApp
 {
     public partial class MainForm : Form
     {
-        private readonly Filter _filter;
+        private readonly Filter _filter = new Filter();
         
         private readonly DataAccess _data = new DataAccess();
 
         private List<History> _history;
         
-        public MainForm(Filter filter)
+        public MainForm()
         {
             InitializeComponent();
             InitialInit();
             InitializeDataGridView();
-            _filter = filter;
         }
 
         private void InitialInit()

@@ -76,7 +76,7 @@ namespace PersonalFinanceApp
                 finally
                 {
                     Hide();
-                    new MainForm(new Filter()).Show();
+                    new MainForm().Show();
                 }
             }
         }

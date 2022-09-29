@@ -1,5 +1,4 @@
-﻿using PersonalFinanceApp.Data;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace PersonalFinanceApp
@@ -14,7 +13,7 @@ namespace PersonalFinanceApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(new Filter()));
+            Application.Run(new MainForm());
         }
     }
 }
